@@ -17,10 +17,10 @@ export default function Header() {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
           </svg>
-          <span className="ml-3 text-xl">Tailblocks</span>
+          <span className="ml-3 text-xl">Sharuk Elite Designs</span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">First Link</a>
+          <a className="mr-5 hover:text-gray-900" href="#projects">Projects</a>
           <a className="mr-5 hover:text-gray-900">Second Link</a>
           <a className="mr-5 hover:text-gray-900">Third Link</a>
           <a className="mr-5 hover:text-gray-900">Fourth Link</a>

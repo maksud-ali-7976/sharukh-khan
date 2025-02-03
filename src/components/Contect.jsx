@@ -43,9 +43,9 @@ const Contect = () => {
                   Address
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  123 Main St, Suite 100
+                marwar baliya Deedwana
                   <br />
-                  Anytown, USA 12345
+                    Didwana,Didwana-kuchaman
                 </dd>
               </div>
             </div>
@@ -73,7 +73,7 @@ const Contect = () => {
                 <dt className="text-lg leading-6 font-medium text-gray-900">
                   Phone number
                 </dt>
-                <dd className="mt-2 text-base text-gray-500">(555) 555-5555</dd>
+                <dd className="mt-2 text-base text-gray-500">(+91)9649972893F</dd>
               </div>
             </div>
             <div className="flex">
@@ -101,7 +101,7 @@ const Contect = () => {
                   Email
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
-                  info@ourstore.com
+                Shahrukhgehlot00@gmail.com
                 </dd>
               </div>
             </div>

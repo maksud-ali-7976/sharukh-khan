@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex justify-center items-center min-h-screen bg-gray-100">
         <Slider />
       </div>
-      <div>
+      <div id="projects">
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-4">
