@@ -71,9 +71,9 @@ const Contect = () => {
               </div>
               <div className="ml-4">
                 <dt className="text-lg leading-6 font-medium text-gray-900">
-                  Phone number
+                  Phone Number
                 </dt>
-                <dd className="mt-2 text-base text-gray-500">(+91)9649972893F</dd>
+                <dd className="mt-2 text-base text-gray-500">(+91)9649972893</dd>
               </div>
             </div>
             <div className="flex">

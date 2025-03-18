@@ -1,45 +1,55 @@
-import React from "react";
+'use client';
 
-export default function Header() {
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
-            xmlns="/images/1s.jpg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
-          <span className="ml-3 text-xl">Sharuk Elite Designs</span>
-        </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900" href="#projects">Projects</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
+    <nav className="bg-blue-200 text-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Left Side: Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/">
+              <Image src="/logo.jpeg" alt="Shahrukh 11 Logo" width={60} height={50}  />
+            </Link>
+          </div>
+          <div className='text-2xl text-black  font-sans font-bold' >
+            <h3>Shahrukh 11</h3>
+          </div>
+
+          {/* Right Side: Navigation Links */}
+          <div className="hidden md:flex space-x-6">
+            <a href="#home" className="hover:text-gray-400">Home</a>
+            <a href="#projects" className="hover:text-gray-400">Projects</a>
+            <a href="#about" className="hover:text-gray-400">About</a>
+            
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-300 hover:text-white focus:outline-none"
+            >
+              {isOpen ? '✖' : '☰'}
+            </button>
+          </div>
+        </div>
       </div>
-    </header>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-gray-800 p-4 space-y-2">
+          <Link href="#projects" className="block hover:text-gray-400">Home</Link>
+          <Link href="#" className="block hover:text-gray-400">About</Link>
+          <Link href="#" className="block hover:text-gray-400">Projects</Link>
+          <Link href="#" className="block hover:text-gray-400">Contact</Link>
+        </div>
+      )}
+    </nav>
   );
 }

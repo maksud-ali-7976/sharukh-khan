@@ -8,9 +8,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-  "/images/1s.jpg",
-  "/images/2s.jpg",
-  "/images/3s.jpg",
+  "/s2.jpg",
+  "/s5.jpg",
+  "/s4.jpg",
+  "/s6.jpg",
 ];
 
 export default function ImageSlider() {
